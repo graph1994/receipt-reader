@@ -8,11 +8,12 @@
 
      <script type="javascript">
      //Prepare form data
+     console.log("test")
      var formData = new FormData();
-     formData.append("file", fileToUpload);
-     formData.append("url", "URL-of-Image-or-PDF-file");
+     formData.append("file", 'test.JPG');
+  //   formData.append("url", "URL-of-Im-or-PDF-file");
      formData.append("language", "eng");
-     formData.append("apikey", "Your-API-Key-Here (= helloworld)");
+     formData.append("apikey", "helloworld");
      //Send OCR Parsing request asynchronously
      $.ajax({
        url: "/api/parse/image",
@@ -63,6 +64,7 @@
     <p></p>
     <button type="button" name="button">Click</button>
   </div>
+  <span>https://ocr.a9t9.com/OCRAPI</span>
   </body>
 
 
